@@ -1,0 +1,168 @@
+.mainregistro {
+  grid-area: MAIN;
+  background-color: #faf9f8;
+  display: flex;
+  align-items: center;
+  max-height: calc(100vh - 64px - 80px);
+}
+
+.form {
+  max-width: 50%;
+  min-width: 80%;
+  padding: 0 0 0 80px;
+
+  @media screen and (max-width: 500px) {
+    max-width: 50%;
+    min-width: 100%;
+    padding: 0 20px;
+
+    .form_title {
+      font-size: 25px !important;
+      font-weight: 300;
+      opacity: 0.79;
+      margin: 0 0 0 0 !important;
+    }
+
+    .form_subtitile {
+      font-size: 13px;
+    }
+  }
+
+ 
+
+
+}
+
+
+.form .form_title {
+  font-size: 32px;
+  font-weight: 300;
+  opacity: 0.79;
+  margin: 15px 0;
+}
+
+
+.form .form_email {
+  opacity: 0.7;
+  font-size: 15px;
+  font-weight: 400;
+
+
+}
+
+
+.form_email_input {
+  background-color: transparent;
+  outline: none;
+  height: 20px;
+  border: none;
+  color: var(--blue-registro);
+}
+
+
+
+
+
+.pass_null {
+  color: red;
+  margin: 18px 0 10px 0;
+  @media screen and (max-width: 400px) {
+    margin: 4px 0 1px 0;
+    font-size: 12px;
+  }
+}
+
+.error_span {
+  color: red;
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+.input_actual {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+    margin: 7px 0 ;
+  }
+
+
+}
+
+
+
+.input_actual__label {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.input_actual__input {
+  max-width: 500px;
+  width: 100%;
+  padding: 0 8px;
+  height: 35px;
+  outline: none;
+  font-size: 14px;
+}
+
+
+
+
+.text_ocho {
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.input_check {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 55px 0;
+
+  @media screen and (max-width: 420px) {
+    margin: 0px 0 4px 0 !important;
+
+    &__input {
+      width: 18px;
+      padding: 0 8px;
+      height: 35px;
+      outline: none;
+    }
+    &__span {
+      margin: 10px 10px !important;
+      font-size: 12px;
+    }
+  }
+
+  /* &__input {
+    width: 18px;
+    padding: 0 8px;
+    height: 35px;
+    outline: none;
+  }
+  &__span {
+    margin: 15px 10px;
+  } */
+}
+
+/* // button base */
+/* %btn-base {
+  padding: 8px 14px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+} */
+
+/* .button_guardar {
+  @extend %btn-base;
+  background-color: var(--blue-registro);
+  color: white;
+}
+.button_cancelar {
+  @extend %btn-base;
+  background-color: #bebec0;
+  margin-left: 8px;
+} */

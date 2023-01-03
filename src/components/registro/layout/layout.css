@@ -1,0 +1,13 @@
+.layout {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  background-color: #f3f2f1;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 64px auto 80px;
+
+  grid-template-areas:
+    "HEAD HEAD"
+    "MAIN MAIN"
+    "FOOT FOOT";
+}
