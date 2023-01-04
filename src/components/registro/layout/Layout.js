@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import MainRegistro from '../mainRegistro/MainRegistro';
-import styles from './layout.css';
+import styles from './layout.module.css';
 
 export default function Layout() {
     return (

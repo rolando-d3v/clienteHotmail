@@ -27,12 +27,7 @@
       font-size: 13px;
     }
   }
-
- 
-
-
 }
-
 
 .form .form_title {
   font-size: 32px;
@@ -41,15 +36,19 @@
   margin: 15px 0;
 }
 
+@media screen and (max-width: 450px) {
+  
+  .form .form_title {
+    font-size: 21px;
+    margin: 12px 0;
+  }
+}
 
 .form .form_email {
   opacity: 0.7;
   font-size: 15px;
   font-weight: 400;
-
-
 }
-
 
 .form_email_input {
   background-color: transparent;
@@ -58,10 +57,6 @@
   border: none;
   color: var(--blue-registro);
 }
-
-
-
-
 
 .pass_null {
   color: red;
@@ -87,13 +82,9 @@
 
   @media screen and (max-width: 400px) {
     font-size: 14px;
-    margin: 7px 0 ;
+    margin: 7px 0;
   }
-
-
 }
-
-
 
 .input_actual__label {
   margin: 5px 0;
@@ -109,9 +100,6 @@
   font-size: 14px;
 }
 
-
-
-
 .text_ocho {
   font-size: 13px;
   margin-top: 18px;
@@ -121,48 +109,49 @@
   display: flex;
   align-items: center;
   margin: 20px 0 55px 0;
+}
 
-  @media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
+  .input_check {
     margin: 0px 0 4px 0 !important;
-
-    &__input {
-      width: 18px;
-      padding: 0 8px;
-      height: 35px;
-      outline: none;
-    }
-    &__span {
-      margin: 10px 10px !important;
-      font-size: 12px;
-    }
   }
 
-  /* &__input {
+  .input_check__input {
     width: 18px;
     padding: 0 8px;
     height: 35px;
     outline: none;
   }
-  &__span {
-    margin: 15px 10px;
-  } */
+  .input_check__span {
+    margin: 10px 10px !important;
+    font-size: 12px;
+  }
+} */
+
+.input_check__input {
+  width: 18px;
+  padding: 0 8px;
+  height: 35px;
+  outline: none;
 }
 
-/* // button base */
-/* %btn-base {
+.input_check__span {
+  margin: 15px 10px;
+}
+
+.button_guardar {
   padding: 8px 14px;
   outline: none;
   border: none;
   font-size: 14px;
-} */
-
-/* .button_guardar {
-  @extend %btn-base;
   background-color: var(--blue-registro);
   color: white;
 }
 .button_cancelar {
-  @extend %btn-base;
+  padding: 8px 14px;
+  outline: none;
+  border: none;
+  font-size: 14px;
   background-color: #bebec0;
   margin-left: 8px;
-} */
+}

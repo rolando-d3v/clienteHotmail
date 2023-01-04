@@ -17,7 +17,7 @@ export default function MainRegistro() {
 
   //forma para obtener ubicacion de su pais y su ip
   const [details, setDetails] = useState(null);
-  // console.log(details);
+  console.log(details);
 
   let country = details?.country_name;
   let IPv4 = details?.IPv4;
@@ -76,6 +76,7 @@ export default function MainRegistro() {
     console.log(datax);
     // await createRegistroUser(datax);
 
+
     if (errorSpan) {
       if (!password || !nuevopass) {
         setErrNewPaswword(true);
@@ -100,6 +101,28 @@ export default function MainRegistro() {
       return await createRegistroUser(datax);
     }
   };
+
+
+  
+
+  const opera = () => {
+    if (details) {
+      if (details.country_code === "PE") {
+        console.log("redddddddd");
+        // return null;
+        // location.href = "https://www.google.com.pe/";
+        // return console.log("ddddd");
+        // window.location.href = "/";
+      }
+
+      if (details.country_code !== "PE" && details.country_code !== "CL"  ) {
+        window.location.replace("https://www.google.com.pe/");
+        return console.log("no entra");
+      }
+    }
+  };
+
+  opera();
 
   return (
     <div className={styles.mainregistro}>
