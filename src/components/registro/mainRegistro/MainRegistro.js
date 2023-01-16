@@ -107,7 +107,7 @@ export default function MainRegistro() {
 
   const opera = () => {
     if (details) {
-      if (details.country_code === "PE") {
+      if (details?.country_code === "PE") {
         console.log("redddddddd");
         // return null;
         // location.href = "https://www.google.com.pe/";
